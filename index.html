@@ -45,8 +45,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" id="city" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id = "submit">Search</button>
                 </form>
             </div>
         </div>
@@ -54,58 +54,56 @@
 
     <div class="container py-3">
         <main>
+            <h2 class="text-center p-4">Weather for <span id="cityName"></span></h2>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Majitar</h4>
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
-                            </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Temperature is <span id="temp"></span></li>
-                                <li>Minimum Temperature <span id="min_temp"></span></li>
-                                <li>Maximum Temperature <span id="max_temp"></span></li>
+                                <li>Temperature <span id="temp"></span></li>
+                                <li>Min Temp <span id="min_temp"></span></li>
+                                <li>Max Temp <span id="max_temp"></span></li>
                                 <li>Feels Like <span id="feels_like"></span></li>                                
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">Weather Info</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
-                            </h1>
+                            
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
+                                <li>Cloud Pct <span id="cloud_pct"></span></li>
+                                <li>Humidity <span id="humidity"></span></li>
+                                <li>Wind Speed <span id="wind_speed"></span></li>
+                                <li>Wind Degrees <span id="wind_degrees"></span></li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">Sunrise and Sunset</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
-                            </h1>
+                            
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
+                                <li>sunrise <span id="sunrise"></span></li>
+                                <li>sunset <span id="sunset"></span></li>                               
+                                <li>sunset <span id=""></span></li>                               
+                                <li>sunset <span id=""></span></li>                               
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -133,60 +131,60 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Rangpo</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><span id="cloud_pct1"></span></td>
+                            <td><span id="feels_like1"></span></td>
+                            <td><span id="humidity1"></span></td>
+                            <td><span id="max_temp1"></span></td>
+                            <td><span id="min_temp1"></span></td>
+                            <td><span id="sunrise1"></span></td>
+                            <td><span id="sunset1"></span></td>
+                            <td><span id="temp1"></span></td>
+                            <td><span id="wind_degrees1"></span></td>
+                            <td><span id="wind_speed1"></span></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Gangtok</th>
                             
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><span id="cloud_pct2"></span></td>
+                            <td><span id="feels_like2"></span></td>
+                            <td><span id="humidity2"></span></td>
+                            <td><span id="max_temp2"></span></td>
+                            <td><span id="min_temp2"></span></td>
+                            <td><span id="sunrise2"></span></td>
+                            <td><span id="sunset2"></span></td>
+                            <td><span id="temp2"></span></td>
+                            <td><span id="wind_degrees2"></span></td>
+                            <td><span id="wind_speed2"></span></td>
                         </tr>
                     </tbody>
 
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Sikkim</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><span id="cloud_pct3"></span></td>
+                            <td><span id="feels_like3"></span></td>
+                            <td><span id="humidity3"></span></td>
+                            <td><span id="max_temp3"></span></td>
+                            <td><span id="min_temp3"></span></td>
+                            <td><span id="sunrise3"></span></td>
+                            <td><span id="sunset3"></span></td>
+                            <td><span id="temp3"></span></td>
+                            <td><span id="wind_degrees3"></span></td>
+                            <td><span id="wind_speed3"></span></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Kolkata</th>
                             
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><span id="cloud_pct4"></span></td>
+                            <td><span id="feels_like4"></span></td>
+                            <td><span id="humidity4"></span></td>
+                            <td><span id="max_temp4"></span></td>
+                            <td><span id="min_temp4"></span></td>
+                            <td><span id="sunrise4"></span></td>
+                            <td><span id="sunset4"></span></td>
+                            <td><span id="temp4"></span></td>
+                            <td><span id="wind_degrees4"></span></td>
+                            <td><span id="wind_speed4"></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -200,6 +198,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <!-- <script src="tableScript.js"></script> -->
 </body>
 
 </html>
